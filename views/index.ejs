@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>shop records</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <div class="left-bar"></div> 
+    <div class="shop">
+        <header class="header">
+            <ul class="nav">
+                <li class="nav__item"><a href="/" class="nav__link  active">HOME</a></li>
+                <li class="nav__item"><a href="/records" class="nav__link">RECORDS</a></li>
+                <li class="nav__item"><a href="/products" class="nav__link">PRODUCTS</a></li>
+                <li class="nav__item"><a href="/status" class="nav__link">STATUS</a></li>
+            </ul>
+            <h3 class="header__text">keep records, and let know bussiness status every day</h3>
+            <h3 class="header__date">Oct, Monday 2021</h3>
+        </header>
+
+        <!-- inputs -->
+        <form class="form">
+
+            <!-- for new day -->
+           <div class="form__wrapper">
+               <label for="new-day">It's a new day ?</label>
+               <input type="radio" name="new-day" id="yes" value="yes">Yes
+               <input type="radio" name="new-day" id="no" checked value="no">No
+           </div>
+           <div class="form__wrapper">
+               <label for="product">Enter product name</label>
+               <input type="text" id="product" placeholder="Example: tyre ">
+           </div>
+           <div class="form__wrapper">
+               <label for="number-of-products">Enter number of products sold</label>
+               <input type="text" id="number-of-products" placeholder="Example: 5">
+           </div>
+           <div class="form__wrapper">
+               <label for="disaccount">Disaccount</label>
+               <input type="text" id="disaccount" placeholder="Example: 5000">
+           </div>
+
+           <div class="form__radio">
+               <label for="yes-no">Does product sold for cash ?</label>
+               <input type="radio" value="yes" id="cash" name="yes-no" checked>Yes
+               <input type="radio" value="no" id="not-cash" name="yes-no">No
+           </div>
+           <div class="form__wrapper-hidden" style="display: none;">
+               <input type="text" name="borrower" id="borrower" placeholder="enter name of borrower">
+           </div>
+
+           <button type="submit" id="submit">save records</button>
+           <p class="form__message">amo</p>
+        </form>
+
+        
+    </div>
+
+    <script src="main.js"></script>
+ </body>
+ </html>
